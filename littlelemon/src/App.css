@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Layout */
+
+header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+main {
+  display: flex;
+}
+
+footer {
+  display: flex;
+}
