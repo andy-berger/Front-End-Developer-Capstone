@@ -4,6 +4,8 @@ import Nav from "./Nav";
 import Main from "./Main";
 import Footer from "./Footer";
 import {Route, Routes} from "react-router-dom";
+import BookingPage from "./BookingPage";
+import BookingConfirmed from "./BookingConfirmed";
 import AboutPage from "./AboutPage";
 import MenuPage from "./MenuPage";
 import ReservationsPage from "./ReservationsPage";
@@ -17,6 +19,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/reservetable" element={<BookingPage />} />
+        <Route path="/tableconfirmed" element={<BookingConfirmed />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/reservations" element={<ReservationsPage />} />
